@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-reguler {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+a {
+    display: inline-block;
+    margin: auto;
+    padding: 0.1rem 0.3rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: all .3s cubic-bezier(.2, 0, 0, 1);
+    z-index: 1;
+    
+    &:after {
+      content: '';
+      display: block;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      right: 1.25rem;
+      left: 1.25rem;
+      background-color: #5c97fd;
+      transition: all .3s cubic-bezier(.2, 0, 0, 1);
+      transform-origin: bottom center;
+      z-index: -1;
+    }
+    
+    &:hover {
+      color: white;
+      
+      &:after {
+        right: 0;
+        left: 0;
+        height: 100%;
+      }
+    }
+}
+
+h2 {
+    margin: 5px 0;
+}
+
+.mt-8 {
+    margin-top: 40px;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+body {
+    background-color: #deeaff;
+    margin: 0;
+}
+
+main {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    padding: 0 120px;
+}
+
+.header-title {
+    font-size: 36px;
+}
+
+.author-wrapper  {
+    padding: 0 60px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.image-wrapper {
+    max-width: 1440px;
+    height: 70vh;
+    
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+img {
+    position: relative;
+    object-fit: cover;
+    width: 1440px;
+    height: 100%;
+    padding: 0 60px;
+}
+
+.no-list-decor {
+    list-style: none;
+}
+
+.copy-right-sec{
+    padding: 1.8rem;
+      background: #5c97fd;
+      color: black;
+      text-align: center;
+  }
+  .copy-right-sec a{
+    color: #fcd462;
+      font-weight: 500;
+  }
+
+  
